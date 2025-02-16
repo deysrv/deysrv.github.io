@@ -20,15 +20,18 @@ github_username: "deysrv"
 #########################################################################################
 theme: "minima"
 
-# rss: rss
+# rss: rss (disabling the subscribe through rss)
 
 kramdown:
   syntax_highlighter_opts:
     disable: true
     
 plugins:
-  - jekyll-feed
+  - jekyll-feed 
   - jekyll-sitemap
+
+exclude: 
+  - feed.xml (disabling the subscribe through rss)
 
 titles_from_headings:
   strip_title: true
