@@ -27,7 +27,7 @@ kramdown:
     disable: true
     
 plugins:
-  # - jekyll-feed (disabling the subscribe through rss)
+  - jekyll-feed 
   - jekyll-sitemap
 
 
