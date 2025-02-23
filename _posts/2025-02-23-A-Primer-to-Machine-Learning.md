@@ -40,7 +40,7 @@ Supervised learning is further classified based on the nature of the target vari
 
 With this definition of supervised learning, let's look at underlying mathematical framework to tackle such problems:
 
-Let, $Y$ denote the response random variable(roughly, a random variable can be thought of a function( a measurable function, don't worry if you don't understand this term it won't matter in our discussions) from sample space to $\mathbb{R^d}$) and $X$ be the feature random variable(r.v.).
+Let, $$Y$$ denote the response random variable(roughly, a random variable can be thought of a function( a measurable function, don't worry if you don't understand this term it won't matter in our discussions) from sample space to $\mathbb{R^d}$) and $X$ be the feature random variable(r.v.).
 
 Our goal is to understand the relation between $X$ and $Y$.
 
