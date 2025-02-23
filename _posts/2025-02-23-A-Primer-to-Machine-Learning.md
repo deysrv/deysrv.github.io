@@ -40,24 +40,24 @@ Supervised learning is further classified based on the nature of the target vari
 
 With this definition of supervised learning, let's look at underlying mathematical framework to tackle such problems:
 
-Let, $$Y$$ denote the response random variable(roughly, a random variable can be thought of a function( a measurable function, don't worry if you don't understand this term it won't matter in our discussions) from sample space to $\mathbb{R^d}$) and $X$ be the feature random variable(r.v.).
+Let, $$Y$$ denote the response random variable(roughly, a random variable can be thought of a function( a measurable function, don't worry if you don't understand this term it won't matter in our discussions) from sample space to $$\mathbb{R^d}$$) and $$X$$ be the feature random variable(r.v.).
 
-Our goal is to understand the relation between $X$ and $Y$.
+Our goal is to understand the relation between $$X$$ and $$Y$$.
 
-Let, $f:X\to Y$ be the function that defines the relation between $X$ and $Y$. 
+Let, $$f:X\to Y$$ be the function that defines the relation between $$X$$ and $$Y$$. 
 
-...but, how to choose $f~?$ 
-We must choose $f$ such that it minimizes the expected prediction error.
-For regression this turned out to be minimizing, $\text{EPE}(f) = E(f(X)-Y)^2$ which can be written as,
+...but, how to choose $$f~?$$ 
+We must choose $$f$$ such that it minimizes the expected prediction error.
+For regression this turned out to be minimizing, $$\text{EPE}(f) = E(f(X)-Y)^2$$ which can be written as,
 
 $$ EPE(f) = E_{X}E_{Y|X}(f(X)-Y)^2 $$
 
-which is same as finding point wise minimum i.e. finding best value for $f(\~{c})$ for each $X = \~{c}.$ So, our task is to minimize $E[(f(\~{c})-Y)^2|X=\~{c}]$ which is given by , $f(\~{c}) = E(Y|X=\~{c}).$
+which is same as finding point wise minimum i.e. finding best value for $$f(\~{c})$$ for each $$X = \~{c}.$$ So, our task is to minimize $$E[(f(\~{c})-Y)^2|X=\~{c}]$$ which is given by , $$f(\~{c}) = E(Y|X=\~{c}).$$
 
-Therefore, best $f$ is the conditional mean of $Y$ given $X.$
+Therefore, best $$f$$ is the conditional mean of $$Y$$ given $$X.$$
 
 However, in real scenarios, we rarely have enough data to compute the exact mean of 
-$Y$ for each $X.$ Therefore, we often make assumptions about the structure of 
-$f$ globally (as in linear regression or logistic regression) or locally (as in k-nearest neighbors or decision trees). 
+$$Y$$ for each $$X.$$ Therefore, we often make assumptions about the structure of 
+$$f$$ globally (as in linear regression or logistic regression) or locally (as in k-nearest neighbors or decision trees). 
 
 We will explore these approaches in detail in future posts.
