@@ -52,7 +52,8 @@ For regression this turned out to be minimizing, $$\text{EPE}(f) = E(f(X)-Y)^2$$
 
 $$ EPE(f) = E_{X}E_{Y|X}(f(X)-Y)^2 $$
 
-which is same as finding point wise minimum i.e. finding best value for $$f(\tilde{c})$$ for each $$X = \tilde{c}.$$ So, our task is to minimize $$E\[(f(\tilde{c})-Y)^2|X=\tilde{c}\]$$ which is given by , $$f(\tilde{c}) = E(Y|X=\tilde{c}).$$
+which is same as finding point wise minimum i.e. finding best value for $$f(\tilde{c})$$ for each $$X = \tilde{c}.$$ 
+So, our task is to minimize $$E((f(\tilde{c})-Y)^2|X=\tilde{c})$$ which is given by , $$f(\tilde{c}) = E(Y|X=\tilde{c}).$$
 
 Therefore, best $$f$$ is the conditional mean of $$Y$$ given $$X.$$
 
